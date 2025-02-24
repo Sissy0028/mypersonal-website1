@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <title>Personal Website</title>
+    <style>
+      /* <!-- Optional: Add custom CSS --> */
+      body {
+        padding: 40px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        line-height: 1.6;
+        color: #333;
+      }
+      .container-fluid {
+        background-color: black;
+        color: white;
+      }
+      .home {
+        background-color: black;
+        color: rgb(173, 53, 53);
+      }
+      /* Hover effect for images */
+      img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      #header-image img {
+        float: left;
+        margin-right: 15px;
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      }
+      .dropdown-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .dropdown-menu-center {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center; /* Centers the text inside the dropdown menu */
+      }
+
+      .dropdown-menu-center li {
+        display: flex;
+        justify-content: center;
+      }
+      /* Make the footer stick to the bottom of the page */
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: right;
+        padding: 10px;
+        padding-right: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"
+            ><span style="color: white">Personal Website</span></a
+          >
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="home">
+            <a href="#"><span style="color: white">Home</span> </a>
+          </li>
+          <li>
+            <a href="#about"><span style="color: white">About me</span></a>
+          </li>
+          <li>
+            <a href="#contact"><span style="color: white">Contact</span></a>
+          </li>
+          <!-- Dropdown for Projects -->
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span style="color: white">Projects</span>
+              <span class="caret" style="color: white"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#project1">HTML</a></li>
+              <li><a href="#project2">CSS</a></li>
+              <li><a href="#project3">JavaScript</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="header-image" class="text-center">
+      <img
+        src="images/profile.jpg"
+        alt="image"
+        class="img-fluid"
+        style="margin-top: 50px; margin-left: 15px"
+      />
+    </div>
+    <div
+      class="jumbotron text-center"
+      style="background-color: rgb(192, 173, 173)"
+    >
+      <div class="container">
+        <h1>Welcome to My Personal Website</h1>
+        <p>
+          Hey all! i am sisay "Welcome to my little corner of the internet! Hope
+          you enjoy exploring what I'm passionate about. Feel free to take a
+          look around and connect if you'd like!""
+        </p>
+      </div>
+    </div>
+    <!-- About Section -->
+    <div id="about" class="col-md-4">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm sisay, a web development enthusiast and beginner in the field.
+        I've always been fascinated by how websites are made and how they work,
+        which led me to start learning web development. I started learning web
+        development about 2 months ago, diving into HTML, CSS, and JavaScript.I
+        love solving problems and creating websites that are both functional and
+        visually appealing. Currently I'm also working on building my personal
+        website to showcase my projects and progress. I'm excited to continue
+        learning and expanding my skills while contributing to the web
+        development community.
+      </p>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact" class="col-md-4">
+      <h2>Contact</h2>
+      <p>
+        If you'd like to get in touch with me, please feel free to reach out!
+      </p>
+      <ul class="list-unstyled">
+        <li>
+          Email:
+          <a href="mailto:sisaydejenudbu@gmail.com">sisaydejenudbu@gmail.com</a>
+        </li>
+        <li>Phone: <a href="tel">+251973056021</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+          >
+            HTML <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML is a hypertext markup language</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-success dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+          >
+            CSS <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">CSS is a style sheet language</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-info dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+          >
+            JavaScript <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">JavaScript is a programming language</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Panel for HTML -->
+    <div class="panel panel-info">
+      <div class="panel-heading">Information Panel</div>
+      <div class="panel-body">
+        This is a panel that provides information about my journey in web
+        development. I am currently learning HTML, CSS, and JavaScript, and I am
+        excited to build more projects.
+      </div>
+    </div>
+    <div class="panel panel-warning">
+      <div class="panel-heading">Warning Panel</div>
+      <div class="panel-body">
+        Here, I provide tips for new developers. Don't be discouraged by
+        challenges—every mistake is a step toward growth!
+      </div>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">Success Panel</div>
+      <div class="panel-body">
+        I have understand some technologies, and I'm now working on building my
+        personal portfolio website. Stay tuned for more!
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <button
+          class="btn btn-primary dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+        >
+          Dropdown Example <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer">
+        <p>&copy; 2024 Personal Website. All Rights Reserved.</p>
+      </div>
+      <div class="footer-links">
+        <ul class="list-unstyled">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://github.com/sissy0028" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies (jQuery, Bootstrap JS) -->
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
